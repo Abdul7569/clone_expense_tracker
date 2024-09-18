@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Add Expense</h2>
+            <form id="expense-form">
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" required>
+                
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" step="0.01" required>
+                
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a category</option>
+                    <option value="groceries">Groceries</option>
+                    <option value="utilities">Utilities</option>
+                    <option value="rent">Rent</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="transport">Transport</option>
+                    <option value="Others">Others</option>
+                    <!-- Add more options as needed -->
+                </select>
+                
+                <button type="submit">Add Expense</button>
+            </form>
+        </section>
+        
+        <section>
+            <h2>Expenses List</h2>
+            <table id="expenses-table">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Expense rows will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Income Information</h2>
+            <form id="income-form">
+                <label for="hourlyWage">Hourly Wage:</label>
+                <input type="number" id="hourlyWage" name="hourlyWage" step="0.01" required>
+
+                <label for="weeklyHours">Weekly Working Hours:</label>
+                <input type="number" id="weeklyHours" name="weeklyHours" step="0.1" required>
+
+                <button type="button" onclick="setIncome()">Save Income</button>
+            </form>
+        </section>
+        
+        <section>
+            <h2>Add Debt</h2>
+            <form id="debt-form">
+                <div id="debt-inputs">
+                    <label for="debt-description">Debt Description:</label>
+                    <input type="text" id="debt-description" name="debt-description" placeholder="Description" required>
+
+                    <label for="debt-amount">Debt Amount:</label>
+                    <input type="number" id="debt-amount" name="debt-amount" step="0.01" required>
+
+                    <button type="button" onclick="addDebt()">Add Debt</button>
+                </div>
+
+                <h3>Debts</h3>
+                <ul id="debt-list">
+                    <!-- List of debts will be shown here -->
+                </ul>
+
+                <button type="button" onclick="calculateRepaymentTime()">Calculate Repayment Time</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Repayment Result</h2>
+            <p id="repayment-result"></p>
+        </section>
+        
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

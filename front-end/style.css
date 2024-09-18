@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.transparenttextures.com/patterns/white-diamond.png'); /* Light texture background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #333; /* Dark text color for better readability */
+}
+
+header {
+    background-color: #2C3E50; /* Darker shade for header */
+    color: #ECF0F1; /* Lighter text color */
+    text-align: center;
+    padding: 1.5em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for header */
+}
+
+main {
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 1em;
+    background: #FFF; /* White background for content area */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect for main content */
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+form {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Rounded corners for form */
+    background: #F9F9F9; /* Light background for form */
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"], select {
+    padding: 0.75em;
+    margin-bottom: 1em;
+    width: calc(100% - 1.5em); /* Adjust width to account for padding */
+    border: 1px solid #BDC3C7; /* Border color for input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+button {
+    padding: 0.75em 1.5em;
+    background-color: #3498DB; /* Blue background color for buttons */
+    color: white;
+    border: none;
+    border-radius: 4px; /* Rounded corners for buttons */
+    cursor: pointer;
+    font-size: 1em; /* Larger font size for readability */
+}
+
+button:hover {
+    background-color: #2980B9; /* Darker blue for button hover effect */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+table, th, td {
+    border: 1px solid #BDC3C7; /* Border color for table */
+}
+
+th, td {
+    padding: 0.75em;
+    text-align: left;
+    background: #F9F9F9; /* Light background for table cells */
+}
+
+th {
+    background: #2C3E50; /* Darker background for table headers */
+    color: #ECF0F1; /* Lighter text color for headers */
+}
+
+tr:nth-child(even) {
+    background: #F2F2F2; /* Alternate row colors for readability */
+}
+
+tfoot td {
+    font-weight: bold;
+}
